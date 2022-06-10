@@ -103,5 +103,6 @@ int main() //головная программа
 
 
 Вот что выводится на экран после запуска программы:
+
 ![image](https://user-images.githubusercontent.com/100388979/172994735-52e62a99-5d00-41b1-a5a8-263e4fda2a87.png)
 
