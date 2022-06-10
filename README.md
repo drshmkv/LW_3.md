@@ -86,7 +86,7 @@ int main() //головная программа
 Если n=1:
 
 
-![image](https://user-images.githubusercontent.com/100388979/172994227-41778d17-0a22-4864-97c8-2fc8badc9868.png)
+![image](https://user-images.githubusercontent.com/100388979/172995256-72492651-5a6a-459c-ae81-5544d1a67bd6.png)
 ![image](https://user-images.githubusercontent.com/100388979/172994956-c5b9ffa4-72c8-40a1-9a48-d73817018c70.png)
 
 
