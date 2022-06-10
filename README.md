@@ -24,3 +24,11 @@
 #### Текст программы:
 
 ```c++
+
+
+#### Результат работы программы:
+
+![image](https://user-images.githubusercontent.com/100388979/172994152-f2502677-f0bf-42b3-aa9f-c545c9c190ac.png)
+
+Если n=1:
+![image](https://user-images.githubusercontent.com/100388979/172994227-41778d17-0a22-4864-97c8-2fc8badc9868.png)
