@@ -87,7 +87,21 @@ int main() //головная программа
 
 
 ![image](https://user-images.githubusercontent.com/100388979/172994227-41778d17-0a22-4864-97c8-2fc8badc9868.png)
+![image](https://user-images.githubusercontent.com/100388979/172994956-c5b9ffa4-72c8-40a1-9a48-d73817018c70.png)
 
 
+Если n=2:
+
+![image](https://user-images.githubusercontent.com/100388979/172995008-57bd3b73-4746-4ff8-83a6-b3e912f922ac.png)
+![image](https://user-images.githubusercontent.com/100388979/172995074-19ecf61f-828f-42d4-b3eb-30b30e5d0330.png)
+
+
+Если n=3:
+
+![image](https://user-images.githubusercontent.com/100388979/172995126-0540ba60-c400-403e-b2fd-78e02dafe6ef.png)
+![image](https://user-images.githubusercontent.com/100388979/172995161-5d5d38c1-f26f-4014-bdbd-4cf0ce34fc9d.png)
+
+
+Вот что выводится на экран после запуска программы:
 ![image](https://user-images.githubusercontent.com/100388979/172994735-52e62a99-5d00-41b1-a5a8-263e4fda2a87.png)
 
