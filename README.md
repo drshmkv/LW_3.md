@@ -25,11 +25,69 @@
 
 ```c++
 
+#include <fstream>  //библиотека для ввода в файл и вывода из файла
+#include <iostream> //подключение библиотеки для ввода и вывода
+
+using namespace std;
+
+int main() //головная программа
+{
+	cout << "IDEU" << endl;				//объявляем данные о себе и о задаче
+	cout << "ShmykovaDarya" << endl;   
+	cout << "Group 2105" << endl;
+	cout << "LW number 1" << endl << endl; 
+	
+	double a, b, c, Vector; //объявляем переменные типа double
+	int n = 0; //счётчик, который посчитает сколько координат указано в файле: 1, 2 или 3
+
+	ifstream ifile("C:/Users/User/Desktop/input.txt"); //открыфваем поток ввода из файла
+
+	if (ifile) {								// если файл удалось открыть и он нормальный, то
+		while (!ifile.eof() && n < 3) {			//цикл while пока не конецй файла и пока счётчик < 3, то // eof() - если файл закончился то возвращает 1 истину; && - логическоке и
+			ifile >> a;							//считываем число , то есть это проверка сколько значимых координат имеется  в файле
+			++n; //								//прибавляем +1 к счётчику
+		}
+	}
+	ifile.close();								//закрываем поток ввода
+
+	ofstream ofile("C:/Users/User/Desktop/output.txt");				//открываем поток вывода
+
+	if (ofile) {							//проверим, возможно ли открыть файл для ввода
+		if (n < 2) ofile << "error. malo dannih" << endl;			//если у нас меньше двух координат, то выводим В ФАЙЛ сообщение об ошибке 
+		else {														//иначе
+			ifstream ifile("C:/Users/User/Desktop/input.txt");		//открываем поток ввода 
+			if (n == 2) {											//проверяем, если счётчик равен двум, то у нас вектор состоит из 2 элементов, то
+				ifile >> a >> b;									
+				Vector = sqrt(a * a + b * b);						//и тогда вычисляем его длину по следующей формуле
+			}
+			else {													//иначе счётчик равен 3 и считаем длину вектора из 3 элементов
+				ifile >> a >> b >> c;
+				Vector = sqrt(a * a + b * b + c * c);				//считаем длину вектора (формула)
+			}
+			ifile.close();											//закрываем поток ввода
+			ofile << "Vector = " << Vector;							//в поток вывода записывается значение посчитанной длины вектора
+		}
+	}
+
+	ofile.close();						//закрываем поток вывода
+
+	cout << "Check the output file" << endl;
+
+	return 0; //
+}
+
 ```
 
 #### Результат работы программы:
 
 ![image](https://user-images.githubusercontent.com/100388979/172994152-f2502677-f0bf-42b3-aa9f-c545c9c190ac.png)
 
+
 Если n=1:
+
+
 ![image](https://user-images.githubusercontent.com/100388979/172994227-41778d17-0a22-4864-97c8-2fc8badc9868.png)
+
+
+![image](https://user-images.githubusercontent.com/100388979/172994735-52e62a99-5d00-41b1-a5a8-263e4fda2a87.png)
+
